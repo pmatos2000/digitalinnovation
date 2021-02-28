@@ -88,7 +88,6 @@ public class ComparatorsImplementacao {
             return 0;
         });
         System.out.println(alunos);
-
         //Ordene usando referência de métodos e os métodos estáticos de Comparator
         alunos.sort(Comparator.comparingDouble(Aluno::media).reversed()); //Ordena pela media
         System.out.println(alunos);
@@ -105,6 +104,5 @@ public class ComparatorsImplementacao {
             treeMap.put(aluno, aluno.media());
         }
         System.out.println(treeMap);
-
     }
 }
