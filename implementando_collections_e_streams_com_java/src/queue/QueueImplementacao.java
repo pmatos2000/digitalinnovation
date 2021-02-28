@@ -1,12 +1,14 @@
 package queue;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class QueueImplementacao {
     public static void main(String[] args) {
         //Adicione 5 nomes: Juliana, Pedro, Carlos, Larissa e João
-        var fila = new LinkedList<String>();
+        Queue<String> fila = new LinkedList<String>();
         fila.add("Juliana");
         fila.add("Pedro");
         fila.add("Carlos");
@@ -31,8 +33,6 @@ public class QueueImplementacao {
 
         //Adicione um novo nome: Daniel. Verifique a posição que o mesmo assumiu na fila.
         fila.add("Daniel");
-        final var posicaoDaniel = fila.indexOf("Daniel");
-        System.out.println(posicaoDaniel); //4
         System.out.println(fila); //[Pedro, Carlos, Larissa, João, Daniel]
 
         //Retorne o tamanho da lista
