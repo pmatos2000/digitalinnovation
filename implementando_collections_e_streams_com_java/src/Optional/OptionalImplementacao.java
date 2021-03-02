@@ -46,9 +46,5 @@ public class OptionalImplementacao {
         catch(Exception e){
             System.err.println(e.getMessage());
         }
-
-
-
-
     }
 }
